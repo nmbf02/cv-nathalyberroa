@@ -1,7 +1,9 @@
-# 📄 CV Eleazar García
+## 📄 CV Eleazar García
 
 Este es un **Currículum Vitae (CV) online** desarrollado con **Next.js 14**, **Tailwind CSS** y **Framer Motion**.  
 Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **imprimir el CV** en formato PDF.
+
+🌐 **Ver CV Online**: [https://cv-eleazargarcia.netlify.app/](https://cv-eleazargarcia.netlify.app/)
 
 ## 🚀 Características
 
@@ -12,8 +14,6 @@ Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **impr
 ✅ **Opción de imprimir CV**: Genera un PDF directamente desde el navegador.  
 ✅ **Estructura modular**: Componentes reutilizables para fácil personalización.  
 
----
-
 ## 🛠 Tecnologías Usadas
 
 - ⚡ **Next.js 14**
@@ -22,8 +22,6 @@ Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **impr
 - 🎭 **Heroicons & React Icons**
 - 🌑 **next-themes** (para modo oscuro)
 - 🖨 **window.print()** (para imprimir el CV)
-
----
 
 ## 📂 Estructura del Proyecto
 
@@ -50,36 +48,46 @@ cv-eleazargarcia/
 │── package.json
 │── next.config.mjs
 │── README.md
+```
 
-⚙️ Instalación y Uso
+## ⚙️ Instalación y Uso
 
-🔹 1️⃣ Clonar el repositorio
+### 🔹 1️⃣ Clonar el repositorio
 
+```bash
 git clone https://github.com/nmbf02/cv-eleazargarcia.git
 cd cv-eleazargarcia
+```
 
-🔹 2️⃣ Instalar dependencias
+### 🔹 2️⃣ Instalar dependencias
 
+```bash
 npm install
+```
 
-🔹 3️⃣ Ejecutar en desarrollo
+### 🔹 3️⃣ Ejecutar en desarrollo
 
+```bash
 npm run dev
+```
 
-📌 Abrir en: http://localhost:3000
+📌 Abrir en: [http://localhost:3000](http://localhost:3000)
 
-🔹 4️⃣ Construir para producción
+### 🔹 4️⃣ Construir para producción
 
+```bash
 npm run build
 npm start
+```
 
-📌 Funcionalidades
-	•	🖨 Botón de Imprimir CV: Permite generar un PDF desde el navegador.
-	•	🌙 Modo Oscuro/Claro: Controlado desde Footer.jsx.
-	•	🎭 Animaciones Modernas: Framer Motion para mejorar la UI/UX.
+## 📌 Funcionalidades
 
-📜 Licencia
+- 🖨 **Botón de Imprimir CV**: Permite generar un PDF desde el navegador.
+- 🌙 **Modo Oscuro/Claro**: Controlado desde `Footer.jsx`.
+- 🎭 **Animaciones Modernas**: `Framer Motion` para mejorar la UI/UX.
+
+## 📜 Licencia
 
 📜 Este proyecto está bajo la licencia MIT.
 
-🚀 Desarrollado por Nathaly Berroa.
+🚀 **Desarrollado por Nathaly Berroa.**

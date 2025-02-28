@@ -33,18 +33,22 @@ export default function RootLayout({ children }) {
         <html lang="en" suppressHydrationWarning>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-            {/*CV*/}
-            <Hero />
-            <Education />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Certifications />
-            <Languages />
-            <Volunteer />
-            <References />
+            {/* Contenedor del CV que se exportará */}
+            <div id="content" className="bg-white dark:bg-gray-900 min-h-screen p-6">
+                <Hero />
+                <Education />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Certifications />
+                <Languages />
+                <Volunteer />
+                <References />
+                <main className="container mx-auto px-4">{children}</main>
+            </div>
+
+            {/* Footer fuera del contenido descargable */}
             <Footer />
-            <main className="container mx-auto px-4">{children}</main>
         </Providers>
         </body>
         </html>

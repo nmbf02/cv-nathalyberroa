@@ -2,11 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaDownload, FaSun, FaMoon } from "react-icons/fa";
+import { FaPrint, FaSun, FaMoon } from "react-icons/fa";
 import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 
 const Footer = () => {
     const { setTheme, resolvedTheme } = useTheme();
@@ -16,38 +14,22 @@ const Footer = () => {
         setMounted(true);
     }, []);
 
-    // Función para descargar como PDF
-    const downloadPageAsPDF = async () => {
-        setTimeout(async () => {
-            const content = document.getElementById("content");
-            if (!content) {
-                console.error("Elemento con id 'content' no encontrado.");
-                return;
-            }
-
-            const canvas = await html2canvas(content, { scale: 2 });
-            const imgData = canvas.toDataURL("image/png");
-
-            const pdf = new jsPDF("p", "mm", "a4");
-            const imgWidth = 210; // Ancho en mm (A4)
-            const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-            pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-            pdf.save("CV-Eleazar-Garcia.pdf");
-        }, 500); // Se asegura que el DOM esté completamente cargado
+    // Función para imprimir la página
+    const printPage = () => {
+        window.print();
     };
 
     return (
-        <footer className="py-6 px-6 md:px-20 bg-gray-100 dark:bg-gray-900 text-center">
+        <footer className="py-6 px-6 md:px-20 bg-gray-100 dark:bg-gray-900 text-center print:hidden">
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
 
-                {/* Botón de Descarga de CV */}
+                {/* Botón de Imprimir CV */}
                 <motion.button
-                    onClick={downloadPageAsPDF}
+                    onClick={printPage}
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
                     whileHover={{ scale: 1.1 }}
                 >
-                    <FaDownload /> Descargar CV
+                    <FaPrint /> Imprimir CV
                 </motion.button>
 
                 {/* THEME TOGGLE */}

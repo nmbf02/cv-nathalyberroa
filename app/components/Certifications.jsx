@@ -33,12 +33,12 @@ const certifications = [
 
 const Certifications = () => {
     return (
-        <section className="py-10 px-6 md:px-20 bg-gray-50">
+        <section className="py-10 px-6 md:px-20 bg-gray-50 dark:bg-black">
             <div className="max-w-4xl mx-auto">
 
                 {/* Título */}
                 <motion.h2
-                    className="text-2xl font-bold text-gray-900 border-l-4 border-blue-600 pl-3 mb-6"
+                    className="text-2xl font-bold text-gray-900 dark:text-white border-l-4 border-blue-600 pl-3 mb-6"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -51,7 +51,7 @@ const Certifications = () => {
                     {certifications.map((cert, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white p-5 rounded-lg shadow-md flex items-center gap-4"
+                            className="bg-white dark:bg-gray-900 p-5 rounded-lg shadow-md flex items-center gap-4"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -69,8 +69,8 @@ const Certifications = () => {
 
                             {/* Información */}
                             <div>
-                                <h3 className="text-lg font-semibold">{cert.title}</h3>
-                                <p className="text-gray-600 text-sm">{cert.institution}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">{cert.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm">{cert.institution}</p>
                             </div>
                         </motion.div>
                     ))}

@@ -26,7 +26,7 @@ Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **impr
 ## 📂 Estructura del Proyecto
 
 ```bash
-cv-eleazargarcia/
+cv-nathalyberroa/
 │── app/
 │   ├── components/
 │   │   ├── Certifications.jsx

@@ -26,7 +26,7 @@ Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **impr
 ## 📂 Estructura del Proyecto
 
 ```bash
-cv-eleazargarcia/
+cv-nathalyberroa/
 │── app/
 │   ├── components/
 │   │   ├── Certifications.jsx
@@ -38,7 +38,6 @@ cv-eleazargarcia/
 │   │   ├── Projects.jsx
 │   │   ├── References.jsx
 │   │   ├── Skills.jsx
-│   │   ├── Volunteer.jsx
 │   │   ├── ThemeToggle.jsx
 │   ├── layout.js
 │   ├── page.js
@@ -55,8 +54,8 @@ cv-eleazargarcia/
 ### 🔹 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/nmbf02/cv-eleazargarcia.git
-cd cv-eleazargarcia
+git clone https://github.com/nmbf02/cv-nathalyberroa.git
+cd cv-nathalyberroa
 ```
 
 ### 🔹 2️⃣ Instalar dependencias

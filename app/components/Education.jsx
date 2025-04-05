@@ -21,22 +21,42 @@ const Education = () => {
                     <div className="mt-4 space-y-4">
                         <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Ingeniería de Sistemas
+                                Ingeniería en Sistemas Computacionales
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Universidad Adventista Dominicana
+                                Universidad Tecnológica de Santiago (UTESA)
                             </p>
-                            <span className="text-blue-600 font-bold text-sm">TERMINO</span>
+                            <span className="text-yellow-500 font-bold text-sm">En curso (2020 - 2026)</span>
                         </div>
 
                         <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Diplomado en Inteligencia Artificial
+                                Certificación en Diseño de Páginas Web, CSS y JavaScript
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Instituto Tecnológico de las Américas
+                                Centenaria Escuela de Informática S.A.
                             </p>
-                            <span className="text-green-600 font-bold text-sm">Finalizado</span>
+                            <span className="text-green-600 font-bold text-sm">Finalizado (Abr. 2021 - May. 2021)</span>
+                        </div>
+
+                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
+                                Técnico Profesional en Mecatrónica
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                Instituto Tecnológico de México
+                            </p>
+                            <span className="text-green-600 font-bold text-sm">Finalizado (Ago. 2018 - Jun. 2019)</span>
+                        </div>
+
+                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
+                                Especialización en Metodologías Ágiles
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                Netzun
+                            </p>
+                            <span className="text-yellow-500 font-bold text-sm">En curso (2025)</span>
                         </div>
                     </div>
                 </motion.div>

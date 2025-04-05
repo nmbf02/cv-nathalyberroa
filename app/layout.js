@@ -8,7 +8,6 @@ import Experience from "@/app/components/Experience";
 import Projects from "@/app/components/Projects";
 import Certifications from "@/app/components/Certifications";
 import Languages from "@/app/components/Languages";
-import Volunteer from "@/app/components/Volunteer";
 import References from "@/app/components/References";
 import Footer from "@/app/components/Footer";
 import Providers from "./providers";
@@ -24,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Eleazar García | CV",
+    title: "Nathaly Berroa | CV",
     description: "Full Stack Developer crafting dynamic, scalable, and user-friendly web solutions using Next.js, Tailwind CSS, and modern technologies.",
 };
 
@@ -41,7 +40,6 @@ export default function RootLayout({ children }) {
                 <Projects />
                 <Certifications />
                 <Languages />
-                <Volunteer />
                 <References />
             </div>
             <Footer />

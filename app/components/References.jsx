@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const references = [
     {
-        name: "Msc. Jose M. Aquino",
-        position: "Director Ejecutivo BigDataDo",
-        phone: "829 677-3606",
+        name: "Julián Joel Hernández Rodríguez",
+        position: "Full Stack Developer en QuePlan.cl",
+        phone: "+1 (829) 332-1244",
     },
 ];
 

@@ -15,11 +15,11 @@ const Hero = () => {
                 className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-lg"
             >
                 <Image
-                    src="/images/hero-image.png"  // Ruta actualizada
-                    alt="Eleazar García"
+                    src="/images/nathaly-profile.jpg"
+                    alt="Nathaly Berroa"
                     width={150}
                     height={150}
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                 />
             </motion.div>
 
@@ -31,39 +31,40 @@ const Hero = () => {
                 transition={{ delay: 0.3 }}
             >
                 {/* Nombre y título */}
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Eleazar García</h1>
+                <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Nathaly Berroa</h1>
                 <p className="text-lg text-blue-600 font-semibold mt-2">
-                    Desarrollador de Software
+                    Desarrolladora Full Stack | UX/UI | PHP | Laravel | Node.js | SQL
                 </p>
 
                 {/* Descripción */}
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 leading-relaxed max-w-lg">
-                    Soy un desarrollador con más de 3 años de experiencia en el sector financiero, especializado en Backend y en la implementación de soluciones integradas. Poseo habilidades sólidas en lógica de programación orientada a objetos y una capacidad adaptativa a múltiples lenguajes de programación.
+                    Soy una desarrolladora Full Stack con más de 2 años de experiencia creando soluciones web dinámicas, eficientes y escalables. Me especializo en desarrollo backend y frontend utilizando tecnologías modernas como PHP, Laravel, Node.js y JavaScript.
                 </p>
 
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
-                    Mi compromiso con la calidad del código y la experiencia del usuario me convierte en un candidato ideal para cualquier empresa que busque un desarrollador comprometido y versátil.
+                    Actualmente curso Ingeniería en Sistemas Computacionales en UTESA y trabajo en Hidalsoft. Mi enfoque está en brindar soluciones tecnológicas innovadoras, con interfaces centradas en el usuario y una arquitectura sólida.
                 </p>
 
                 {/* Contacto */}
                 <div className="flex justify-center md:justify-start items-center gap-4 mt-6">
                     <a
-                        href="tel:+18493547557"
+                        href="tel:+18496510211"
                         className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
                     >
-                        <FaPhone className="mr-2" /> (849) 354 - 7557
+                        <FaPhone className="mr-2" /> (849) 651 - 0211
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/garciaeleazar/"
+                        href="https://www.linkedin.com/in/nathalyberroa/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
                     >
                         <FaLinkedin className="mr-2" /> LinkedIn
                     </a>
 
                     <a
-                        href="mailto:ing.eleazargarcia98@gmail.com"
+                        href="mailto:nathalyberroaf@gmail.com"
                         className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
                     >
                         <FaEnvelope className="mr-2" /> Email

@@ -64,7 +64,7 @@ const Footer = () => {
 
                 {/* Derechos de autor */}
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                    © {new Date().getFullYear()} Eleazar García. Todos los derechos reservados.
+                    © {new Date().getFullYear()} Nathaly Berroa. Todos los derechos reservados.
                 </p>
             </div>
         </footer>

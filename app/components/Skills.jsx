@@ -19,25 +19,37 @@ const Skills = () => {
 
                     <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            Java / Spring
+                            PHP / Laravel
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            HTML / CSS / JavaScript
+                            JavaScript / Node.js
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            PL-SQL / T-SQL / MySQL
+                            Python / C#
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            GIT / GITFLOW
+                            HTML5 / CSS3
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            Linux / Shell Scripting
+                            SQL / MySQL / PostgreSQL
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            Maven / Wildfly / Jira
+                            Git / GitHub / Docker
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            Jasper Report
+                            API REST / Postman
+                        </span>
+                        <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
+                            Digital Ocean
+                        </span>
+                        <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
+                            XAMPP / MySQL Workbench
+                        </span>
+                        <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
+                            PHPStorm / VS Code / Android Studio
+                        </span>
+                        <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
+                            Figma / Diseño UX/UI
                         </span>
                     </div>
                 </motion.div>

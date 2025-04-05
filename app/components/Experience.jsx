@@ -4,28 +4,20 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        title: "Programador Java",
-        company: "Ministerio de Hacienda de la República Dominicana",
-        duration: "Nov 2021 - Actual",
+        title: "Encargada del Departamento de Soporte Técnico",
+        company: "Hidalsoft | Santiago de los Caballeros, RD",
+        duration: "Julio 2022 – Actualidad",
         description:
-            "Soy parte del equipo de desarrollo y mantenimiento de aplicaciones informáticas para el Programa de Administración Financiera Integrada. Mis responsabilidades incluyen analizar, actualizar el código fuente, implementar nuevas características y solucionar errores, siempre siguiendo las mejores prácticas de calidad de código.",
-        technologies: ["JAVA", "REPORTING", "JASPER REPORT", "PL-SQL", "PENTAHO"],
+            "Brindo soporte técnico a clientes, resolviendo dudas e inconvenientes del sistema de forma eficiente. Creo y gestiono reportes (FRX, RPT, RDLC), valido y configuro copias de seguridad, y optimizo servidores para garantizar la continuidad operativa. Lidero personal técnico fomentando un entorno colaborativo y enfocado a resultados.",
+        technologies: ["SOPORTE", "FRX", "RPT", "RDLC", "SQL", "BACKUP", "SERVIDORES"],
     },
     {
-        title: "Encargado de Sistemas Informáticos",
-        company: "ASES Manufacturing | San Pedro de Macorís",
-        duration: "Mayo 2020 – Nov 2021",
+        title: "Desarrolladora Web Freelance",
+        company: "Proyectos Independientes",
+        duration: "2021 – Actualidad",
         description:
-            "Gestión y mantenimiento de sistemas informáticos, automatización de procesos, coordinación de instalación y configuración de hardware y software. Presentación de informes y análisis de datos.",
-        technologies: ["PYTHON", "EXCEL", "POWER-BI", "DATABASE", "T-SQL", "REPORTING"],
-    },
-    {
-        title: "Integración de Core Bancario",
-        company: "EIB Internacional Bank",
-        duration: "Julio 2023 - Octubre 2023",
-        description:
-            "Implementación de toda la lógica del core bancario a Bankingly. Desarrollo en Java y Spring. Integración con servicios REST y SOAP. Trabajo con nube IBM y optimización de procesos.",
-        technologies: ["REST", "SOAP", "SQL", "AGILE", "GIT"],
+            "Diseño y desarrollo de sitios web personalizados para clientes, enfocándome en la experiencia del usuario y el rendimiento. Desarrollo backend con PHP y Laravel, así como frontend responsive. Algunos proyectos incluyen: Domínguez Auto Pintura, Software Web Mirage y ERP-CRM KDev Software.",
+        technologies: ["PHP", "LARAVEL", "JAVASCRIPT", "HTML", "CSS", "MYSQL", "UX/UI", "FIGMA"],
     },
 ];
 

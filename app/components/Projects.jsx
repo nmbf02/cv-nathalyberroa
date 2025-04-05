@@ -4,12 +4,28 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        title: "Integración de Core Bancario",
-        company: "EIB Internacional Bank",
-        duration: "Julio 2023 - Octubre 2023",
+        title: "RoomLogic - App de Gestión Hotelera",
+        company: "Proyecto Académico - UTESA",
+        duration: "Enero 2025",
         description:
-            "Implementación de toda la lógica del core bancario a Bankingly. Desarrollo en Java y Spring. Integración con servicios REST y SOAP. Trabajo con nube IBM y optimización de procesos.",
-        technologies: ["REST", "SOAP", "SQL", "AGILE", "GIT"],
+            "Aplicación Android desarrollada con arquitectura MVVM, conectada a API REST escrita en Rust. Genera reportes en PDF y permite gestión offline.",
+        technologies: ["Java", "Android", "MVVM", "Rust", "API REST", "PDF"],
+    },
+    {
+        title: "Software Web Mirage",
+        company: "Proyecto Freelance",
+        duration: "Mayo 2024 - Diciembre 2024",
+        description:
+            "Sistema para gestionar venta, renta y subasta de vehículos, con gestión de inventarios y usuarios. Desarrollado con Laravel y MySQL.",
+        technologies: ["Laravel", "JavaScript", "MySQL", "UX/UI", "Figma"],
+    },
+    {
+        title: "Sitio Web - Domínguez Auto Pintura",
+        company: "Proyecto Freelance",
+        duration: "Abril 2023",
+        description:
+            "Diseño y desarrollo del sitio web corporativo para Domínguez Auto Pintura, una empresa dedicada al repintado y estética de vehículos. El sitio incluye información de servicios, portafolio visual, formulario de contacto y diseño responsivo optimizado para SEO.",
+        technologies: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "SEO", "UX/UI"],
     },
 ];
 

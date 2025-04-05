@@ -7,7 +7,7 @@ import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 const Hero = () => {
     return (
         <section className="flex flex-col md:flex-row items-center md:items-start justify-center text-left py-10 px-6 md:px-20 bg-white dark:bg-black">
-            {/* Foto */}
+            {/* Photo */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -23,29 +23,29 @@ const Hero = () => {
                 />
             </motion.div>
 
-            {/* Información */}
+            {/* Info */}
             <motion.div
                 className="md:ml-8 mt-6 md:mt-0 text-center md:text-left"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
             >
-                {/* Nombre y título */}
+                {/* Name and title */}
                 <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Nathaly Berroa</h1>
                 <p className="text-lg text-blue-600 font-semibold mt-2">
-                    Desarrolladora Full Stack | UX/UI | PHP | Laravel | Node.js | SQL
+                    Full Stack Developer | UX/UI | PHP | Laravel | Node.js | SQL
                 </p>
 
-                {/* Descripción */}
+                {/* Description */}
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 leading-relaxed max-w-lg">
-                    Soy una desarrolladora Full Stack con más de 2 años de experiencia creando soluciones web dinámicas, eficientes y escalables. Me especializo en desarrollo backend y frontend utilizando tecnologías modernas como PHP, Laravel, Node.js y JavaScript.
+                    I'm a Full Stack Developer with over 2 years of experience building dynamic, efficient, and scalable web solutions. I specialize in backend and frontend development using modern technologies like PHP, Laravel, Node.js, and JavaScript.
                 </p>
 
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
-                    Actualmente curso Ingeniería en Sistemas Computacionales en UTESA y trabajo en Hidalsoft. Mi enfoque está en brindar soluciones tecnológicas innovadoras, con interfaces centradas en el usuario y una arquitectura sólida.
+                    I'm currently pursuing a degree in Computer Systems Engineering at UTESA and working at Hidalsoft. My focus is on delivering innovative tech solutions with user-centered interfaces and solid architecture.
                 </p>
 
-                {/* Contacto */}
+                {/* Contact */}
                 <div className="flex justify-center md:justify-start items-center gap-4 mt-6">
                     <a
                         href="tel:+18496510211"

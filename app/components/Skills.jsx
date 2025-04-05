@@ -7,14 +7,14 @@ const Skills = () => {
         <section className="py-10 px-6 md:px-20 bg-gray-50 dark:bg-black">
             <div className="max-w-4xl mx-auto">
 
-                {/* Habilidades Técnicas */}
+                {/* Technical Skills */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-l-4 border-blue-600 pl-3">
-                        Habilidades Técnicas
+                        Technical Skills
                     </h2>
 
                     <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
@@ -37,7 +37,7 @@ const Skills = () => {
                             Git / GitHub / Docker
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            API REST / Postman
+                            REST API / Postman
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
                             Digital Ocean
@@ -49,7 +49,7 @@ const Skills = () => {
                             PHPStorm / VS Code / Android Studio
                         </span>
                         <span className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 rounded-lg">
-                            Figma / Diseño UX/UI
+                            Figma / UX/UI Design
                         </span>
                     </div>
                 </motion.div>

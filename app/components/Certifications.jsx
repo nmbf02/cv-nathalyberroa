@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const certifications = [
     {
-        title: "Agilidad y Mindset Ágil",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        title: "Agility and Agile Mindset",
+        institution: "Technological University of Santiago UTESA",
         image: "/images/utesa.png",
     },
     {
         title: "Design Thinking",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        institution: "Technological University of Santiago UTESA",
         image: "/images/utesa.png",
     },
     {
-        title: "Git y GitHub Profesional",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        title: "Professional Git and GitHub",
+        institution: "Technological University of Santiago UTESA",
         image: "/images/utesa.png",
     },
     {
@@ -25,12 +25,12 @@ const certifications = [
         image: "/images/sql-cert.png",
     },
     {
-        title: "Scrum de la teoría a la práctica",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        title: "Scrum: From Theory to Practice",
+        institution: "Technological University of Santiago UTESA",
         image: "/images/utesa.png",
     },
     {
-        title: "Diseñador de páginas web, CSS y JavaScript",
+        title: "Web Page Designer, CSS and JavaScript",
         institution: "Centenaria Escuela de Informática S.A.",
         image: "/images/webdesign-cert.png",
     },
@@ -47,7 +47,7 @@ const Certifications = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Certificaciones
+                    Certifications
                 </motion.h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

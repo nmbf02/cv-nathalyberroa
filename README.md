@@ -3,7 +3,7 @@
 Este es un **Currículum Vitae (CV) online** desarrollado con **Next.js 14**, **Tailwind CSS** y **Framer Motion**.  
 Permite visualizar el CV en la web, cambiar entre **modo claro/oscuro** y **imprimir el CV** en formato PDF.
 
-🌐 **Ver CV Online**: [https://cv-eleazargarcia.netlify.app/](https://cv-nathalyberroa.netlify.app/)
+🌐 **Ver CV Online**: [https://cv-nathalyberroa.netlify.app/](https://cv-nathalyberroa.netlify.app/)
 
 ## 🚀 Características
 

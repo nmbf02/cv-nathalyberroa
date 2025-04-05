@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaPrint } from "react-icons/fa";
 import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
+import { FaFilePdf } from "react-icons/fa6";
 
 const Footer = () => {
     const { setTheme, resolvedTheme } = useTheme();
@@ -27,36 +28,47 @@ const Footer = () => {
                 <motion.button
                     onClick={printPage}
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{scale: 1.1}}
                 >
-                    <FaPrint /> Print CV
+                    <FaPrint/> Print CV
                 </motion.button>
 
                 {/* THEME TOGGLE */}
                 <div className="flex items-center space-x-2 bg-gray-800 p-2 rounded-full shadow-md">
+                    {/* PDF Button */}
+                    <a
+                        href="/docs/Resumen-NathalyBerroa.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-2 rounded-full transition bg-blue-600 hover:bg-blue-700`}
+                        title="Ver Currículum PDF"
+                    >
+                        <FaFilePdf className="h-5 w-5 text-white" />
+                    </a>
+
                     {!mounted ? (
-                        <div className="w-10 h-10" />
+                        <div className="w-10 h-10"/>
                     ) : (
                         <>
                             <button
                                 className={`p-2 rounded-full transition ${resolvedTheme === "system" ? "bg-gray-700" : ""}`}
                                 onClick={() => setTheme("system")}
                             >
-                                <ComputerDesktopIcon className="h-5 w-5 text-gray-400" />
+                                <ComputerDesktopIcon className="h-5 w-5 text-gray-400"/>
                             </button>
 
                             <button
                                 className={`p-2 rounded-full transition ${resolvedTheme === "light" ? "bg-gray-700" : ""}`}
                                 onClick={() => setTheme("light")}
                             >
-                                <SunIcon className="h-5 w-5 text-yellow-400" />
+                                <SunIcon className="h-5 w-5 text-yellow-400"/>
                             </button>
 
                             <button
                                 className={`p-2 rounded-full transition ${resolvedTheme === "dark" ? "bg-gray-700" : ""}`}
                                 onClick={() => setTheme("dark")}
                             >
-                                <MoonIcon className="h-5 w-5 text-gray-200" />
+                                <MoonIcon className="h-5 w-5 text-gray-200"/>
                             </button>
                         </>
                     )}

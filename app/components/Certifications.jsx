@@ -7,32 +7,32 @@ const certifications = [
     {
         title: "Agilidad y Mindset Ágil",
         institution: "Universidad Tecnológica de Santiago UTESA",
-        image: "/utesa.png",
+        image: "/images/utesa.png",
     },
     {
         title: "Design Thinking",
         institution: "Universidad Tecnológica de Santiago UTESA",
-        image: "/utesa.png",
+        image: "/images/utesa.png",
     },
     {
         title: "Git y GitHub Profesional",
         institution: "Universidad Tecnológica de Santiago UTESA",
-        image: "/utesa.png",
+        image: "/images/utesa.png",
     },
     {
         title: "Intermediate SQL",
         institution: "DataCamp",
-        image: "/sql-cert.png",
+        image: "/images/sql-cert.png",
     },
     {
         title: "Scrum de la teoría a la práctica",
         institution: "Universidad Tecnológica de Santiago UTESA",
-        image: "/utesa.png",
+        image: "/images/utesa.png",
     },
     {
         title: "Diseñador de páginas web, CSS y JavaScript",
         institution: "Centenaria Escuela de Informática S.A.",
-        image: "/webdesign-cert.png",
+        image: "/images/webdesign-cert.png",
     },
 ];
 

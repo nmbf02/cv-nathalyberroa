@@ -54,8 +54,8 @@ cv-nathalyberroa/
 ### 🔹 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/nmbf02/cv-eleazargarcia.git
-cd cv-eleazargarcia
+git clone https://github.com/nmbf02/cv-nathalyberroa.git
+cd cv-nathalyberroa
 ```
 
 ### 🔹 2️⃣ Instalar dependencias

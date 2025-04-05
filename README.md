@@ -38,7 +38,6 @@ cv-eleazargarcia/
 │   │   ├── Projects.jsx
 │   │   ├── References.jsx
 │   │   ├── Skills.jsx
-│   │   ├── Volunteer.jsx
 │   │   ├── ThemeToggle.jsx
 │   ├── layout.js
 │   ├── page.js

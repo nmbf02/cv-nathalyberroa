@@ -21,7 +21,7 @@ const certifications = [
     },
     {
         title: "Intermediate SQL",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        institution: "DataCamp",
         image: "/images/sql-cert.png",
     },
     {
@@ -47,7 +47,7 @@ const Certifications = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Certificaciones Destacadas
+                    Certificaciones
                 </motion.h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

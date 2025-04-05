@@ -14,7 +14,7 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
                 className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-lg"
             >
-                <img
+                <Image
                     src="/images/nathaly-profile.jpg"
                     alt="Nathaly Berroa"
                     width={150}

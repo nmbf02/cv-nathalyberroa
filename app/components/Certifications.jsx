@@ -21,7 +21,7 @@ const certifications = [
     },
     {
         title: "Intermediate SQL",
-        institution: "Universidad Tecnológica de Santiago UTESA",
+        institution: "DataCamp",
         image: "/images/sql-cert.png",
     },
     {

@@ -31,6 +31,16 @@ const Education = () => {
 
                         <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
+                                Specialization in Agile Methodologies
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                Netzun
+                            </p>
+                            <span className="text-green-600 font-bold text-sm">Completed (Jan. 2025 - Apr. 2025)</span>
+                        </div>
+
+                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
                                 Web Page Design, CSS, and JavaScript Certification
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
@@ -47,16 +57,6 @@ const Education = () => {
                                 Technological Institute of Mexico
                             </p>
                             <span className="text-green-600 font-bold text-sm">Completed (Aug. 2018 - Jun. 2019)</span>
-                        </div>
-
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Specialization in Agile Methodologies
-                            </h3>
-                            <p className="text-gray-600 dark:text-gray-400">
-                                Netzun
-                            </p>
-                            <span className="text-yellow-500 font-bold text-sm">In progress (2025)</span>
                         </div>
                     </div>
                 </motion.div>

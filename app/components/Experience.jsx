@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
+        title: "CEO and Founder",
+        company: "Kairós Studio",
+        duration: "April 2025 – Present",
+        description:
+            "I founded and lead a creative enterprise focused on the design, packaging, and distribution of themed boxes with artistic products, aiming to foster creativity, wellness, and sensory experiences by blending art, design, and artisan coffee.",
+        technologies: ["E-COMMERCE","CREATIVE DESIGN", "PRODUCT MANAGEMENT", "MARKETING", "BRANDING"],
+    },
+    {
         title: "Head of Technical Support Department",
         company: "Hidalsoft | Santiago de los Caballeros, DR",
         duration: "July 2022 – Present",

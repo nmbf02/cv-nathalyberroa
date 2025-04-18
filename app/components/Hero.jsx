@@ -38,11 +38,15 @@ const Hero = () => {
 
                 {/* Description */}
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 leading-relaxed max-w-lg">
-                    I'm a Full Stack Developer with over 2 years of experience building dynamic, efficient, and scalable web solutions. I specialize in backend and frontend development using modern technologies like PHP, Laravel, Node.js, and JavaScript.
+                    I'm a Full Stack Developer with over 2 years of experience creating dynamic, efficient, and scalable web solutions. I specialize in both backend and frontend development using technologies like PHP, Laravel, Node.js, and JavaScript.
                 </p>
 
                 <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
-                    I'm currently pursuing a degree in Computer Systems Engineering at UTESA and working at Hidalsoft. My focus is on delivering innovative tech solutions with user-centered interfaces and solid architecture.
+                    Currently, I’m pursuing a degree in Computer Systems Engineering at UTESA and working as Head of IT at Hidalsoft. I'm also the Founder of Kairos Studio, a creative initiative that combines art and technology through themed sensory art kits.
+                </p>
+
+                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
+                    I focus on delivering user-centered digital experiences with clean code, solid architecture, and a passion for innovation and continuous learning.
                 </p>
 
                 {/* Contact */}

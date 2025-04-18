@@ -26,7 +26,7 @@ const Education = () => {
                             <p className="text-gray-600 dark:text-gray-400">
                                 Technological University of Santiago (UTESA)
                             </p>
-                            <span className="text-yellow-500 font-bold text-sm">In progress (2020 - 2026)</span>
+                            <span className="text-yellow-500 font-bold text-sm">In progress (Jan. 2020)</span>
                         </div>
 
                         <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">

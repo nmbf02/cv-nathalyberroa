@@ -85,4 +85,6 @@ npm start
 - 🌙 **Modo Oscuro/Claro**: Controlado desde `Footer.jsx`.
 - 🎭 **Animaciones Modernas**: `Framer Motion` para mejorar la UI/UX.
 
-🚀 **Desarrollado por Nathaly Berroa.**
+## 📧 Contact
+
+- **Nathaly Berroa:** [nathalyberroaf@gmail.com](mailto:nathalyberroaf@gmail.com)

@@ -85,8 +85,4 @@ npm start
 - 🌙 **Modo Oscuro/Claro**: Controlado desde `Footer.jsx`.
 - 🎭 **Animaciones Modernas**: `Framer Motion` para mejorar la UI/UX.
 
-## 📜 Licencia
-
-📜 Este proyecto está bajo la licencia MIT.
-
 🚀 **Desarrollado por Nathaly Berroa.**

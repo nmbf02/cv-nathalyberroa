@@ -18,3 +18,49 @@
 body {
   @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))] font-sans;
 }
+
+/* Print styles */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  body {
+    @apply bg-white text-black;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Remove backgrounds and ensure text is readable */
+  .dark {
+    @apply bg-white text-black;
+  }
+
+  /* Prevent page breaks inside sections */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Reduce large spacing */
+  .min-h-screen {
+    min-height: auto !important;
+  }
+
+  /* Ensure links are visible */
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  /* Hide print-hidden elements */
+  .print\\:hidden {
+    display: none !important;
+  }
+}

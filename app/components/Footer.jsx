@@ -3,12 +3,17 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaPrint } from "react-icons/fa";
-import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
 import { FaFilePdf } from "react-icons/fa6";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/app/translations/translations";
 
 const Footer = () => {
     const { setTheme, resolvedTheme } = useTheme();
+    const { language } = useLanguage();
+    const t = translations[language];
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -21,62 +26,62 @@ const Footer = () => {
     };
 
     return (
-        <footer className="py-6 px-6 md:px-20 bg-gray-100 dark:bg-gray-900 text-center print:hidden">
-            <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <footer className="py-8 px-6 md:px-20 border-t border-gray-200 dark:border-gray-800 print:hidden">
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
 
-                {/* Print CV Button */}
-                <motion.button
-                    onClick={printPage}
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
-                    whileHover={{scale: 1.1}}
-                >
-                    <FaPrint/> Print CV
-                </motion.button>
+                {/* Left: Language Toggle */}
+                <LanguageToggle />
 
-                {/* THEME TOGGLE */}
-                <div className="flex items-center space-x-2 bg-gray-800 p-2 rounded-full shadow-md">
+                {/* Center: Actions */}
+                <div className="flex items-center gap-4">
                     {/* PDF Button */}
                     <a
                         href="/docs/Resumen-NathalyBerroa.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`p-2 rounded-full transition bg-blue-600 hover:bg-blue-700`}
-                        title="Ver Currículum PDF"
+                        className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                        title={language === "en" ? "View PDF Resume" : "Ver Currículum PDF"}
                     >
-                        <FaFilePdf className="h-5 w-5 text-white" />
+                        <FaFilePdf className="h-5 w-5" />
                     </a>
 
+                    {/* Print Button */}
+                    <motion.button
+                        onClick={printPage}
+                        className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                        title={t.footer.print}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <FaPrint className="h-5 w-5" />
+                    </motion.button>
+
+                    {/* Theme Toggle */}
                     {!mounted ? (
-                        <div className="w-10 h-10"/>
+                        <div className="w-8 h-8"/>
                     ) : (
-                        <>
+                        <div className="flex items-center gap-1 border border-gray-300 dark:border-gray-700 rounded-lg p-1">
                             <button
-                                className={`p-2 rounded-full transition ${resolvedTheme === "system" ? "bg-gray-700" : ""}`}
-                                onClick={() => setTheme("system")}
-                            >
-                                <ComputerDesktopIcon className="h-5 w-5 text-gray-400"/>
-                            </button>
-
-                            <button
-                                className={`p-2 rounded-full transition ${resolvedTheme === "light" ? "bg-gray-700" : ""}`}
+                                className={`p-1.5 rounded transition ${resolvedTheme === "light" ? "bg-gray-200 dark:bg-gray-700" : ""}`}
                                 onClick={() => setTheme("light")}
+                                title="Light mode"
                             >
-                                <SunIcon className="h-5 w-5 text-yellow-400"/>
+                                <SunIcon className="h-4 w-4 text-gray-600 dark:text-gray-400"/>
                             </button>
-
                             <button
-                                className={`p-2 rounded-full transition ${resolvedTheme === "dark" ? "bg-gray-700" : ""}`}
+                                className={`p-1.5 rounded transition ${resolvedTheme === "dark" ? "bg-gray-200 dark:bg-gray-700" : ""}`}
                                 onClick={() => setTheme("dark")}
+                                title="Dark mode"
                             >
-                                <MoonIcon className="h-5 w-5 text-gray-200"/>
+                                <MoonIcon className="h-4 w-4 text-gray-600 dark:text-gray-400"/>
                             </button>
-                        </>
+                        </div>
                     )}
                 </div>
 
-                {/* Copyright */}
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                    © {new Date().getFullYear()} Nathaly Berroa. All rights reserved.
+                {/* Right: Copyright */}
+                <p className="text-xs text-gray-500 dark:text-gray-500">
+                    © {new Date().getFullYear()} {language === "en" ? "Engineer" : "Ingeniera"} Nathaly Berroa
                 </p>
             </div>
         </footer>

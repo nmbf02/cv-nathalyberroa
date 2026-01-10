@@ -1,8 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/app/translations/translations";
 
 const Education = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     return (
         <section className="py-10 px-6 md:px-20 bg-white dark:bg-black">
             <div className="max-w-4xl mx-auto">
@@ -14,59 +19,59 @@ const Education = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-l-4 border-blue-600 pl-3">
-                        Education
+                    <h2 className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-500 bg-clip-text text-transparent mb-6">
+                        {t.sections.education}
                     </h2>
 
-                    <div className="mt-4 space-y-4">
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Bachelor's Degree in Computer Systems Engineering
+                    <div className="space-y-4">
+                        <div className="border-l-4 border-blue-500 pl-4 pb-4 border-b border-gray-200 dark:border-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                                {t.education.degree}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Technological University of Santiago (UTESA)
+                                {t.education.university}
                             </p>
-                            <span className="text-yellow-500 font-bold text-sm">In progress (Jan. 2020)</span>
+                            <span className="inline-block mt-2 px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-full">{t.education.degreeStatus}</span>
                         </div>
 
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Specialization in Data Analytics
+                        <div className="border-l-4 border-blue-500 pl-4 pb-4 border-b border-gray-200 dark:border-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                                {t.education.dataAnalytics}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Netzum
+                                {t.education.dataAnalyticsOrg}
                             </p>
-                            <span className="text-yellow-500 font-bold text-sm">In progress (Apr. 2025)</span>
+                            <span className="inline-block mt-2 px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-full">{t.education.dataAnalyticsStatus}</span>
                         </div>
 
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Specialization in Agile Methodologies
+                        <div className="border-l-4 border-blue-500 pl-4 pb-4 border-b border-gray-200 dark:border-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                                {t.education.agile}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Netzun
+                                {t.education.agileOrg}
                             </p>
-                            <span className="text-green-600 font-bold text-sm">Completed (Jan. 2025 - Apr. 2025)</span>
+                            <span className="inline-block mt-2 px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 text-sm font-medium rounded-full">{t.education.agileStatus}</span>
                         </div>
 
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Web Page Design, CSS, and JavaScript Certification
+                        <div className="border-l-4 border-blue-500 pl-4 pb-4 border-b border-gray-200 dark:border-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                                {t.education.webDesign}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Centenaria Escuela de Informática S.A.
+                                {t.education.webDesignOrg}
                             </p>
-                            <span className="text-green-600 font-bold text-sm">Completed (Apr. 2021 - May. 2021)</span>
+                            <span className="inline-block mt-2 px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 text-sm font-medium rounded-full">{t.education.webDesignStatus}</span>
                         </div>
 
-                        <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
-                                Professional Technician in Mechatronics
+                        <div className="border-l-4 border-blue-500 pl-4 pb-4 border-b border-gray-200 dark:border-gray-800">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                                {t.education.mechatronics}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400">
-                                Technological Institute of Mexico
+                                {t.education.mechatronicsOrg}
                             </p>
-                            <span className="text-green-600 font-bold text-sm">Completed (Aug. 2018 - Jun. 2019)</span>
+                            <span className="inline-block mt-2 px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 text-sm font-medium rounded-full">{t.education.mechatronicsStatus}</span>
                         </div>
                     </div>
                 </motion.div>

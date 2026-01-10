@@ -1,68 +1,77 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const experiences = [
-    {
-        title: "CEO and Founder",
-        company: "Kairós Studio",
-        duration: "April 2025 – Present",
-        description:
-            "I founded and lead a creative enterprise focused on the design, packaging, and distribution of themed boxes with artistic products, aiming to foster creativity, wellness, and sensory experiences by blending art, design, and artisan coffee.",
-        technologies: ["E-COMMERCE","CREATIVE DESIGN", "PRODUCT MANAGEMENT", "MARKETING", "BRANDING"],
-    },
-    {
-        title: "Head of Technical Support Department",
-        company: "Hidalsoft | Santiago de los Caballeros, DR",
-        duration: "July 2022 – Present",
-        description:
-            "I provide technical support to clients by efficiently resolving system-related doubts and issues. I create and manage reports (FRX, RPT, RDLC), validate and configure backups, and optimize servers to ensure operational continuity. I lead technical staff, fostering a collaborative and results-oriented environment.",
-        technologies: ["SUPPORT", "FRX", "RPT", "RDLC", "SQL", "BACKUP", "SERVERS"],
-    },
-    {
-        title: "Freelance Web Developer",
-        company: "Independent Projects",
-        duration: "2021 – Present",
-        description:
-            "Design and development of custom websites for clients, focusing on user experience and performance. Backend development with PHP and Laravel, as well as responsive frontend. Some projects include: Domínguez Auto Pintura, Mirage Web Software, and ERP-CRM KDev Software.",
-        technologies: ["PHP", "LARAVEL", "JAVASCRIPT", "HTML", "CSS", "MYSQL", "UX/UI", "FIGMA"],
-    },
-];
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/app/translations/translations";
 
 const Experience = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
+    const experiences = [
+        {
+            title: t.experience.webmaster.title,
+            company: t.experience.webmaster.company,
+            duration: t.experience.webmaster.duration,
+            description: t.experience.webmaster.description,
+            technologies: t.experience.webmaster.technologies,
+        },
+        {
+            title: t.experience.consultant.title,
+            company: t.experience.consultant.company,
+            duration: t.experience.consultant.duration,
+            description: t.experience.consultant.description,
+            technologies: t.experience.consultant.technologies,
+        },
+        {
+            title: t.experience.ceo.title,
+            company: t.experience.ceo.company,
+            duration: t.experience.ceo.duration,
+            description: t.experience.ceo.description,
+            technologies: t.experience.ceo.technologies,
+        },
+        {
+            title: t.experience.head.title,
+            company: t.experience.head.company,
+            duration: t.experience.head.duration,
+            description: t.experience.head.description,
+            technologies: t.experience.head.technologies,
+        },
+    ];
+
     return (
         <section className="py-10 px-6 md:px-20 bg-gray-50 dark:bg-black">
             <div className="max-w-4xl mx-auto">
 
                 {/* Title */}
                 <motion.h2
-                    className="text-2xl font-bold text-gray-900 dark:text-white border-l-4 border-blue-600 pl-3 mb-6"
+                    className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-500 bg-clip-text text-transparent mb-6"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Work Experience
+                    {t.sections.experience}
                 </motion.h2>
 
                 {/* Experience List */}
-                <div className="space-y-8">
+                <div className="space-y-6">
                     {experiences.map((exp, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white dark:bg-gray-900 p-5 rounded-lg shadow-md"
+                            className="border-l-4 border-blue-500 pl-4 pb-6 border-b border-gray-200 dark:border-gray-800 last:border-b-0"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">{exp.title}</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{exp.title}</h3>
                             <p className="text-gray-600 dark:text-gray-400">{exp.company}</p>
-                            <span className="text-blue-600 font-bold text-sm">{exp.duration}</span>
-                            <p className="text-gray-700 dark:text-gray-300 text-sm mt-2">{exp.description}</p>
+                            <span className="inline-block mt-1 px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 text-sm font-medium rounded-full">{exp.duration}</span>
+                            <p className="text-gray-700 dark:text-gray-300 text-sm mt-3 leading-relaxed">{exp.description}</p>
 
                             {/* Technology Tags */}
-                            <div className="flex flex-wrap gap-2 mt-3">
+                            <div className="flex flex-wrap gap-2 mt-4">
                                 {exp.technologies.map((tech, i) => (
-                                    <span key={i} className="bg-blue-100 dark:bg-blue-900 dark:text-white px-3 py-1 text-sm rounded-lg">
+                                    <span key={i} className="bg-blue-50 dark:bg-blue-900/20 text-gray-700 dark:text-gray-300 border border-blue-200 dark:border-blue-800 px-2.5 py-1 text-xs rounded-lg font-medium">
                                         {tech}
                                     </span>
                                 ))}

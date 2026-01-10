@@ -1,77 +1,67 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/app/translations/translations";
 
 const Hero = () => {
-    return (
-        <section className="flex flex-col md:flex-row items-center md:items-start justify-center text-left py-10 px-6 md:px-20 bg-white dark:bg-black">
-            {/* Photo */}
-            <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-lg"
-            >
-                <Image
-                    src="/images/nathaly-profile.jpg"
-                    alt="Nathaly Berroa"
-                    width={150}
-                    height={150}
-                    className="object-cover w-full h-full"
-                />
-            </motion.div>
+    const { language } = useLanguage();
+    const t = translations[language];
 
+    return (
+        <section className="flex flex-col items-center justify-center text-center min-h-screen py-12 px-6 md:px-20 bg-white dark:bg-black">
             {/* Info */}
             <motion.div
-                className="md:ml-8 mt-6 md:mt-0 text-center md:text-left"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
+                className="max-w-3xl w-full"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
             >
                 {/* Name and title */}
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Nathaly Berroa</h1>
-                <p className="text-lg text-blue-600 font-semibold mt-2">
-                    Full Stack Developer | UX/UI | PHP | Laravel | Node.js | SQL
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-400 dark:to-blue-500 bg-clip-text text-transparent">
+                    Nathaly Berroa
+                </h1>
+                <p className="text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 font-semibold mt-2">
+                    {t.hero.title}
                 </p>
 
                 {/* Description */}
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 leading-relaxed max-w-lg">
-                    I'm a Full Stack Developer with over 2 years of experience creating dynamic, efficient, and scalable web solutions. I specialize in both backend and frontend development using technologies like PHP, Laravel, Node.js, and JavaScript.
+                <p className="text-gray-600 dark:text-gray-400 text-sm mt-4 leading-relaxed max-w-lg mx-auto">
+                    {t.hero.description1}
                 </p>
 
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
-                    Currently, I’m pursuing a degree in Computer Systems Engineering at UTESA and working as Head of IT at Hidalsoft. I'm also the Founder of Kairos Studio, a creative initiative that combines art and technology through themed sensory art kits.
+                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg mx-auto">
+                    {t.hero.description2}
                 </p>
 
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg">
-                    I focus on delivering user-centered digital experiences with clean code, solid architecture, and a passion for innovation and continuous learning.
+                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-lg mx-auto">
+                    {t.hero.description3}
                 </p>
 
                 {/* Contact */}
-                <div className="flex justify-center md:justify-start items-center gap-4 mt-6">
+                <div className="flex justify-center items-center gap-4 mt-6 flex-wrap">
                     <a
                         href="tel:+18496510211"
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
+                        className="flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors text-sm font-medium"
                     >
-                        <FaPhone className="mr-2" /> (849) 651 - 0211
+                        <FaPhone className="mr-2" /> {t.hero.phone}
                     </a>
 
                     <a
                         href="https://www.linkedin.com/in/nathalyberroa/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
+                        className="flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors text-sm font-medium"
                     >
-                        <FaLinkedin className="mr-2" /> LinkedIn
+                        <FaLinkedin className="mr-2" /> {t.hero.linkedin}
                     </a>
 
                     <a
                         href="mailto:nathalyberroaf@gmail.com"
-                        className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 transition text-sm"
+                        className="flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors text-sm font-medium"
                     >
-                        <FaEnvelope className="mr-2" /> Email
+                        <FaEnvelope className="mr-2" /> {t.hero.email}
                     </a>
                 </div>
             </motion.div>

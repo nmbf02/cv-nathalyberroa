@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Projects — Sección de proyectos recientes (ReHub, Smart Farming, ISA, Equinox, Domínguez, etc.).
+ * Cada proyecto: título, empresa/contexto, duración, descripción y tags. Orden cronológico (más reciente primero).
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";
@@ -10,6 +14,13 @@ const Projects = () => {
 
     // Projects ordered chronologically (most recent first)
     const projects = [
+        {
+            title: t.projects.rehub.title,
+            company: t.projects.rehub.company,
+            duration: t.projects.rehub.duration,
+            description: t.projects.rehub.description,
+            technologies: t.projects.rehub.technologies,
+        },
         {
             title: t.projects.smartfarming.title,
             company: t.projects.smartfarming.company,

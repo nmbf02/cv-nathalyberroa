@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Education — Sección de formación: título universitario, especializaciones y certificaciones formativas.
+ * Cada ítem tiene título, institución y estado (en progreso / completado). Textos desde translations.
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";
@@ -32,16 +36,6 @@ const Education = () => {
                                 {t.education.university}
                             </p>
                             <span className="inline-block mt-2 print:mt-1 px-3 py-1 print:px-2 print:py-0.5 bg-gray-100 dark:bg-gray-800 print:bg-gray-100 print:border print:border-gray-400 text-gray-700 dark:text-gray-300 print:text-black text-sm font-medium rounded-full">{t.education.degreeStatus}</span>
-                        </div>
-
-                        <div className="border-l-4 border-blue-500 print:border-gray-800 pl-4 pb-4 print:pb-2 border-b border-gray-200 dark:border-gray-800 print:border-gray-300">
-                            <h3 className="text-lg print:text-base font-semibold text-gray-900 dark:text-gray-100 print:text-black">
-                                {t.education.dataAnalytics}
-                            </h3>
-                            <p className="text-gray-600 dark:text-gray-400 print:text-black print:text-sm">
-                                {t.education.dataAnalyticsOrg}
-                            </p>
-                            <span className="inline-block mt-2 px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-full">{t.education.dataAnalyticsStatus}</span>
                         </div>
 
                         <div className="border-l-4 border-blue-500 print:border-gray-800 pl-4 pb-4 print:pb-2 border-b border-gray-200 dark:border-gray-800 print:border-gray-300">

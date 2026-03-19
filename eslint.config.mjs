@@ -1,3 +1,7 @@
+/**
+ * ESLint — Configuración plana (flat config) extendiendo next/core-web-vitals.
+ * Uso: npm run lint
+ */
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";

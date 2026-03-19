@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Hero — Sección principal del CV: nombre, título, descripción y enlaces de contacto.
+ * Usa traducciones (EN/ES) y animaciones con Framer Motion. Incluye bloque de contacto solo para impresión.
+ */
 import { motion } from "framer-motion";
 import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import { useLanguage } from "@/app/contexts/LanguageContext";

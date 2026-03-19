@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * LanguageContext — Contexto React para idioma (EN/ES).
+ * Persiste la preferencia en localStorage y detecta el idioma del navegador si no hay valor guardado.
+ * Proporciona: language ("en" | "es") y changeLanguage(lang).
+ */
 import { createContext, useContext, useState, useEffect } from "react";
 
 const LanguageContext = createContext();
@@ -32,6 +37,10 @@ export function LanguageProvider({ children }) {
     );
 }
 
+/**
+ * Hook useLanguage — Devuelve { language, changeLanguage } del LanguageProvider.
+ * @throws {Error} Si se usa fuera de LanguageProvider
+ */
 export function useLanguage() {
     const context = useContext(LanguageContext);
     if (!context) {

@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Languages — Sección de idiomas con nombre y nivel (ej. Español: Nativo, Inglés: B1).
+ * Datos desde translations (languages.spanish, languages.english, languages.native).
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";

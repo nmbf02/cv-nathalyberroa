@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * LanguageToggle — Botón EN / ES para cambiar idioma. Usa useLanguage() y changeLanguage().
+ * Muestra el idioma activo resaltado; al hacer clic alterna entre "en" y "es".
+ */
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * References — Sección de referencias personales: nombre, cargo/institución y teléfono.
+ * Posición traducida según idioma (EN/ES) para referencias académicas.
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";
@@ -10,14 +14,19 @@ const References = () => {
 
     const references = [
         {
+            name: "Luis Santana",
+            position: language === "en" ? "Instructor, Computer Systems Engineering program at Technological University of Santiago UTESA" : "Instructor de la carrera de Ingeniería en Sistemas Computacionales en Universidad Tecnológica de Santiago UTESA",
+            phone: "(829) 232-1766",
+        },
+        {
             name: "Claudia Báez",
             position: language === "en" ? "Advanced Database Instructor at Technological University of Santiago UTESA" : "Instructora de Bases de Datos Avanzadas en Universidad Tecnológica de Santiago UTESA",
-            phone: "809 327 0427",
+            phone: "(809) 327-0427",
         },
         {
             name: "Julián Joel Hernández Rodríguez",
             position: "Full Stack Developer at QuePlan.cl",
-            phone: "+1 (829) 332-1244",
+            phone: "(829) 332-1244",
         },
     ];
 

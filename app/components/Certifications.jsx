@@ -1,5 +1,10 @@
 "use client";
 
+/**
+ * Certifications — Sección de certificaciones con logo, título e institución.
+ * Imágenes en public/images (udemy.png, python.png, utesa.png, github.png, sql-cert.png, webdesign-cert.png).
+ * Todas usan tamaño estándar 48x48; imageLarge permitiría 64x64 si se define en el ítem.
+ */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useLanguage } from "@/app/contexts/LanguageContext";
@@ -10,6 +15,16 @@ const Certifications = () => {
     const t = translations[language];
 
     const certifications = [
+        {
+            title: t.certifications.masterJavaScript,
+            institution: t.certifications.masterJavaScriptStatus,
+            image: "/images/udemy.png",
+        },
+        {
+            title: t.certifications.pythonFastapi,
+            institution: t.certifications.pythonFastapiStatus,
+            image: "/images/python.png",
+        },
         {
             title: t.certifications.agility,
             institution: t.certifications.institution.utesa,
@@ -23,7 +38,7 @@ const Certifications = () => {
         {
             title: t.certifications.git,
             institution: t.certifications.institution.utesa,
-            image: "/images/utesa.png",
+            image: "/images/github.png",
         },
         {
             title: t.certifications.sql,
@@ -64,13 +79,13 @@ const Certifications = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <div className="w-12 h-12 print:w-8 print:h-8 flex-shrink-0">
+                            <div className={`flex-shrink-0 ${cert.imageLarge ? "w-16 h-16 print:w-12 print:h-12" : "w-12 h-12 print:w-8 print:h-8"}`}>
                                 <Image
                                     src={cert.image}
                                     alt={cert.title}
-                                    width={48}
-                                    height={48}
-                                    className="rounded object-cover"
+                                    width={cert.imageLarge ? 64 : 48}
+                                    height={cert.imageLarge ? 64 : 48}
+                                    className="rounded object-cover w-full h-full"
                                 />
                             </div>
                             <div>

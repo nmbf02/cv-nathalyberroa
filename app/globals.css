@@ -1,8 +1,12 @@
+/**
+ * Estilos globales — Base de Tailwind y variables CSS para tema claro/oscuro.
+ * Incluye estilos de impresión (PDF): tamaño carta, márgenes, evitar saltos de página en secciones.
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Setting colors in light mode (default) */
+/* Colores en modo claro (por defecto) */
 :root {
   --background: 255, 255, 255; /* White */
   --foreground: 23, 23, 23; /* Black */

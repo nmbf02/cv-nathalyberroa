@@ -1,3 +1,8 @@
+/**
+ * Traducciones (i18n) — Textos del CV en inglés (en) y español (es).
+ * Estructura: hero, sections, education, experience, projects, certifications, languages, footer, etc.
+ * Uso: const t = translations[language]; luego t.hero.title, t.sections.education, etc.
+ */
 export const translations = {
     en: {
         // Hero
@@ -25,9 +30,6 @@ export const translations = {
             degree: "Bachelor's Degree in Computer Systems Engineering",
             university: "Technological University of Santiago (UTESA)",
             degreeStatus: "In progress (Jan. 2020)",
-            dataAnalytics: "Specialization in Data Analytics",
-            dataAnalyticsOrg: "Netzum",
-            dataAnalyticsStatus: "In progress (Apr. 2025)",
             agile: "Specialization in Agile Methodologies",
             agileOrg: "Netzun",
             agileStatus: "Completed (Jan. 2025 - Apr. 2025)",
@@ -71,23 +73,30 @@ export const translations = {
         },
         // Projects
         projects: {
+            rehub: {
+                title: "ReHubRD",
+                company: "Pilot Project",
+                duration: "2026",
+                description: "Next.js platform for post-accident accompaniment in the Dominican Republic. Features user dashboard with flow: Profile → Plan → Tracking → Resources, authentication demo with next-auth, reusable UI components, and reminder module for scheduling in-session reminders.",
+                technologies: ["NEXT.JS", "TYPESCRIPT", "NEXT-AUTH", "DASHBOARD", "FRONTEND"],
+            },
             smartfarming: {
                 title: "Smart Farming Education Platform",
-                company: "Freelance Project",
+                company: "Private Project",
                 duration: "2025",
                 description: "Responsive web platform built to teach young people in Kenya about modern and sustainable agricultural techniques. Empowering Kenya's youth with modern, sustainable farming techniques. Originally conceived by Felix Kioni & Derrick Gucema.",
                 technologies: ["WEB PLATFORM", "RESPONSIVE DESIGN", "AGRICULTURE & TECHNOLOGY", "EDUCATION"],
             },
             isa: {
                 title: "Sitio Web Universidad ISA",
-                company: "Freelance Project",
+                company: "Private Project",
                 duration: "2025",
                 description: "Modern institutional website for ISA University with academic programs, news, student life, and research sections. Built with responsive design and optimized user experience.",
                 technologies: ["WEB DEVELOPMENT", "RESPONSIVE DESIGN", "USER EXPERIENCE", "INSTITUTIONAL WEBSITE"],
             },
             dominguez: {
                 title: "Sitio Web Domínguez Auto Pintura",
-                company: "Freelance Project",
+                company: "Private Project",
                 duration: "2023",
                 description: "Development of a professional and responsive website for a painting and maintenance company, effectively showcasing services.",
                 technologies: ["WEB DEVELOPMENT", "RESPONSIVE DESIGN", "PROFESSIONAL WEBSITE"],
@@ -109,10 +118,16 @@ export const translations = {
             sql: "Intermediate SQL",
             scrum: "Scrum: From Theory to Practice",
             webDesign: "Web Page Designer, CSS and JavaScript",
+            masterJavaScript: "Master in JavaScript",
+            pythonFastapi: "Python FastAPI",
+            masterJavaScriptStatus: "Udemy · In progress (Mar. 2026)",
+            pythonFastapiStatus: "LinkedIn",
             institution: {
                 utesa: "Technological University of Santiago UTESA",
                 datacamp: "DataCamp",
                 centenaria: "Centenaria Escuela de Informática S.A.",
+                udemy: "Udemy",
+                linkedin: "LinkedIn",
             },
         },
         // Languages
@@ -158,9 +173,6 @@ export const translations = {
             degree: "Licenciatura en Ingeniería de Sistemas Computacionales",
             university: "Universidad Tecnológica de Santiago (UTESA)",
             degreeStatus: "En progreso (Ene. 2020)",
-            dataAnalytics: "Especialización en Análisis de Datos",
-            dataAnalyticsOrg: "Netzum",
-            dataAnalyticsStatus: "En progreso (Abr. 2025)",
             agile: "Especialización en Metodologías Ágiles",
             agileOrg: "Netzun",
             agileStatus: "Completado (Ene. 2025 - Abr. 2025)",
@@ -204,23 +216,30 @@ export const translations = {
         },
         // Projects
         projects: {
+            rehub: {
+                title: "ReHubRD",
+                company: "Proyecto Piloto",
+                duration: "2026",
+                description: "Plataforma Next.js para acompañamiento post-accidente en República Dominicana. Incluye panel de usuario con flujo: Perfil → Plan → Seguimiento → Recursos, autenticación demo con next-auth, componentes UI reutilizables y módulo de recordatorios en sesión.",
+                technologies: ["NEXT.JS", "TYPESCRIPT", "NEXT-AUTH", "DASHBOARD", "FRONTEND"],
+            },
             smartfarming: {
                 title: "Plataforma Smart Farming",
-                company: "Proyecto Freelance",
+                company: "Proyecto Privado",
                 duration: "2025",
                 description: "Plataforma web responsive construida para enseñar a jóvenes en Kenia sobre técnicas modernas y sostenibles de agricultura. Empoderando a la juventud de Kenia con técnicas agrícolas modernas y sostenibles. Originalmente ideado por Felix Kioni & Derrick Gucema.",
                 technologies: ["PLATAFORMA WEB", "DISEÑO RESPONSIVE", "AGRICULTURA & TECNOLOGÍA", "EDUCACIÓN"],
             },
             isa: {
                 title: "Sitio Web Universidad ISA",
-                company: "Proyecto Freelance",
+                company: "Proyecto Privado",
                 duration: "2025",
                 description: "Sitio web institucional moderno para la Universidad ISA con programas académicos, noticias, vida estudiantil y secciones de investigación. Construido con diseño responsive y experiencia de usuario optimizada.",
                 technologies: ["DESARROLLO WEB", "DISEÑO RESPONSIVE", "EXPERIENCIA DE USUARIO", "SITIO WEB INSTITUCIONAL"],
             },
             dominguez: {
                 title: "Sitio Web Domínguez Auto Pintura",
-                company: "Proyecto Freelance",
+                company: "Proyecto Privado",
                 duration: "2023",
                 description: "Desarrollo de sitio web profesional y responsive para una empresa de pintura y mantenimiento, mostrando servicios de manera efectiva.",
                 technologies: ["DESARROLLO WEB", "DISEÑO RESPONSIVE", "SITIO WEB PROFESIONAL"],
@@ -242,10 +261,16 @@ export const translations = {
             sql: "SQL Intermedio",
             scrum: "Scrum: De la Teoría a la Práctica",
             webDesign: "Diseñador de Páginas Web, CSS y JavaScript",
+            masterJavaScript: "Master en JavaScript",
+            pythonFastapi: "Python FastAPI",
+            masterJavaScriptStatus: "Udemy · En progreso (Mar. 2026)",
+            pythonFastapiStatus: "LinkedIn",
             institution: {
                 utesa: "Universidad Tecnológica de Santiago UTESA",
                 datacamp: "DataCamp",
                 centenaria: "Centenaria Escuela de Informática S.A.",
+                udemy: "Udemy",
+                linkedin: "LinkedIn",
             },
         },
         // Languages

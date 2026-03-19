@@ -1,6 +1,10 @@
+/**
+ * Root Layout — Layout principal de la aplicación (App Router).
+ * Define la estructura HTML, fuentes (Geist), metadata SEO y el orden de las secciones del CV.
+ * Envuelve el contenido en Providers (tema + idioma) y renderiza Hero, Education, Skills, etc.
+ */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// En uso
 import Hero from "@/app/components/Hero";
 import Education from "@/app/components/Education";
 import Skills from "@/app/components/Skills";

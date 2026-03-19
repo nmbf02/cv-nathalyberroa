@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Skills — Sección de habilidades técnicas: tags de tecnologías (PHP, JS, Node, SQL, Git, etc.).
+ * Grid responsivo; estilos adaptados para impresión (print:).
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";

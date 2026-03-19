@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Footer — Pie fijo: selector de idioma (EN/ES), enlace al PDF, botón imprimir y toggle tema (claro/oscuro).
+ * Oculto en impresión (print:hidden). Usa next-themes para el tema y LanguageContext para el idioma.
+ */
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaPrint } from "react-icons/fa";

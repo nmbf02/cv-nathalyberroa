@@ -1,4 +1,9 @@
 "use client";
+
+/**
+ * ThemeToggle — Selector de tema: Sistema, Claro y Oscuro (next-themes).
+ * Evita hidratación incorrecta con mounted; no se usa en el layout actual (Footer tiene su propio toggle).
+ */
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon, ComputerDesktopIcon } from "@heroicons/react/24/solid";

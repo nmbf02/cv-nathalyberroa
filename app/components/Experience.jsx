@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Experience — Sección de experiencia laboral: Webmaster, Consultora, CEO Kairós, Jefa de Soporte.
+ * Cada ítem: título, empresa, duración, descripción y tags de tecnologías. Datos desde translations.
+ */
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { translations } from "@/app/translations/translations";

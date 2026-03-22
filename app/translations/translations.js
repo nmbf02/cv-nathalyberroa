@@ -27,7 +27,7 @@ export const translations = {
         },
         // Education
         education: {
-            degree: "Bachelor's Degree in Computer Systems Engineering",
+            degree: "Computer Systems Engineering",
             university: "Technological University of Santiago (UTESA)",
             degreeStatus: "In progress (Jan. 2020)",
             agile: "Specialization in Agile Methodologies",
@@ -170,7 +170,7 @@ export const translations = {
         },
         // Education
         education: {
-            degree: "Licenciatura en Ingeniería de Sistemas Computacionales",
+            degree: "Ingeniería de Sistemas Computacionales",
             university: "Universidad Tecnológica de Santiago (UTESA)",
             degreeStatus: "En progreso (Ene. 2020)",
             agile: "Especialización en Metodologías Ágiles",

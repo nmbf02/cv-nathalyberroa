@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Experience — Sección de experiencia laboral: Webmaster, Consultora, CEO Kairós, Jefa de Soporte.
+ * Experience — Sección de experiencia laboral: Webmaster, Consultora, Encargada de Soporte, CEO y Fundadora (Kairós comentado).
  * Cada ítem: título, empresa, duración, descripción y tags de tecnologías. Datos desde translations.
  */
 import { motion } from "framer-motion";
@@ -27,6 +27,7 @@ const Experience = () => {
             description: t.experience.consultant.description,
             technologies: t.experience.consultant.technologies,
         },
+        /* Kairós Studio — descomentar para volver a mostrar
         {
             title: t.experience.ceo.title,
             company: t.experience.ceo.company,
@@ -34,6 +35,7 @@ const Experience = () => {
             description: t.experience.ceo.description,
             technologies: t.experience.ceo.technologies,
         },
+        */
         {
             title: t.experience.head.title,
             company: t.experience.head.company,
